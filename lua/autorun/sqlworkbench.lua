@@ -59,6 +59,8 @@ function SQLWorkbench:EscapeTable(table_name)
 end
 
 if (SERVER) then
+	resource.AddFile("materials/vgui/sqlworkbench.vtf")
+
 	AddCSLuaFile("sqlworkbench/mysql.lua")
 	AddCSLuaFile("sqlworkbench/menu.lua")
 	AddCSLuaFile("sqlworkbench/networking.lua")
