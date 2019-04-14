@@ -45,7 +45,7 @@ To open the menu, first make sure you are a super admin, and then either:
 * Discards net messages sent by players who do not have the SQLWorkbench menu open to prevent exploitation
 * Menu elements can be dragged and sized to your liking
 * Primary key columns are highlighted in yellow
-* Uses the Ace embedded code editor, and works offline without a need for JavaScript CDNs
+* Uses the [Ace embedded code editor](https://ace.c9.io), and works offline without a need for JavaScript CDNs
 
 ## Screenshots
 
