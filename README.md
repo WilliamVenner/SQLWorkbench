@@ -6,7 +6,7 @@ Using this tool, you can manage your server's local SQLite database (`garrysmod/
 
 ## Requirements
 
-**Only super admins can use SQLWorkbench. All net messages sent by non-super-admins are discarded for your security.**
+**Only super admins can use SQLWorkbench.**
 
 To connect to MySQL databases, your server must have the [MySQLOO module](https://github.com/FredyH/MySQLOO) installed.
 
