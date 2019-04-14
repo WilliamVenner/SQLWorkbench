@@ -61,6 +61,8 @@ To open the menu, first make sure you are a super admin, and then either:
 
 ![](http://i.venner.io/gmod_2019-04-14_21-19-02.png)
 
+![](http://i.venner.io/gmod_2019-04-14_21-48-47.png)
+
 ## License
 
 This software is licensed under the [MIT License](https://github.com/WilliamVenner/SQLWorkbench/blob/master/LICENSE)
