@@ -1,23 +1,23 @@
-## SQLWorkbench
+# SQLWorkbench
 
 This tool is an in-game SQLite & MySQL database interface for Garry's Mod.
 
 Using this tool, you can manage your server's local SQLite database (`garrysmod/sv.db`) and any remote MySQL databases you desire to connect to.
 
-### Requirements
+## Requirements
 
 **Only super admins can use SQLWorkbench. All net messages sent by non-super-admins are discarded for your security.**
 
 To connect to MySQL databases, your server must have the [MySQLOO module](https://github.com/FredyH/MySQLOO) installed.
 
-### Usage
+## Usage
 
 To open the menu, first make sure you are a super admin, and then either:
 
 * Type `!sqlworkbench` in chat
 * Type `sqlworkbench` in your game's console
 
-### Features
+## Features
 
 * Interface with remote MySQL servers
 * Interface with server's local SQLite database
@@ -47,15 +47,9 @@ To open the menu, first make sure you are a super admin, and then either:
 * Primary key columns are highlighted in yellow
 * Uses the Ace embedded code editor, and works offline without a need for JavaScript CDNs
 
-### Screenshots
+## Screenshots
 
 ![](http://i.venner.io/gmod_2019-04-14_21-10-44.png)
-
-![](http://i.venner.io/gmod_2019-04-14_21-15-58.png)
-
-![](http://i.venner.io/gmod_2019-04-14_21-16-21.png)
-
-![](http://i.venner.io/gmod_2019-04-14_21-19-02.png)
 
 ![](http://i.venner.io/PaintDotNet_2019-04-14_21-21-19.png)
 
@@ -63,6 +57,10 @@ To open the menu, first make sure you are a super admin, and then either:
 
 ![](http://i.venner.io/gmod_2019-04-14_21-46-22.png)
 
-### License
+![](http://i.venner.io/gmod_2019-04-14_21-16-21.png)
+
+![](http://i.venner.io/gmod_2019-04-14_21-19-02.png)
+
+## License
 
 This software is licensed under the [MIT License](https://github.com/WilliamVenner/SQLWorkbench/blob/master/LICENSE)
