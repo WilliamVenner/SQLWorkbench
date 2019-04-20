@@ -8,7 +8,7 @@ function SQLWorkbench.Database:Query(connection, query, callback)
 			return
 		end
 		local affected_rows = 0
-		local affected_rows_query = sql.Query("SELECT changes() AS AFFECTED_ROWS FROM memes LIMIT 1")
+		local affected_rows_query = sql.Query("SELECT changes() AS AFFECTED_ROWS LIMIT 1")
 		if (affected_rows_query and #affected_rows_query > 0) then affected_rows = tonumber(affected_rows_query[1].AFFECTED_ROWS) or 0 end
 		if (callback) then callback(res, affected_rows) end
 	else
