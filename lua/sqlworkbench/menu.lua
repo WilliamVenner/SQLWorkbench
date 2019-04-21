@@ -804,6 +804,11 @@ else
 				SQLWorkbench.Menu.Tabs.NewConnection.Copyright:SizeToContents()
 				SQLWorkbench.Menu.Tabs.NewConnection.Copyright:SetTextColor(SQLWorkbench.COLOR.BLACK)
 
+				SQLWorkbench.Menu.Tabs.NewConnection.GitHubStar = vgui.Create("DLabel", SQLWorkbench.Menu.Tabs.NewConnection)
+				SQLWorkbench.Menu.Tabs.NewConnection.GitHubStar:SetText("If this tool helped you, please give it a star on GitHub!")
+				SQLWorkbench.Menu.Tabs.NewConnection.GitHubStar:SizeToContents()
+				SQLWorkbench.Menu.Tabs.NewConnection.GitHubStar:SetTextColor(SQLWorkbench.COLOR.BLACK)
+
 				SQLWorkbench.Menu.Tabs.NewConnection.Form = vgui.Create("DPanel", SQLWorkbench.Menu.Tabs.NewConnection)
 				SQLWorkbench.Menu.Tabs.NewConnection.Form.Paint = nil
 				SQLWorkbench.Menu.Tabs.NewConnection.Form.InputItems = {}
@@ -1090,9 +1095,11 @@ else
 			function SQLWorkbench.Menu.Tabs.NewConnection:PerformLayout()
 				self.Form:Center()
 				self.GitHub:AlignRight(10)
-				self.GitHub:AlignBottom(10 + self.Copyright:GetTall() + 5)
+				self.GitHub:AlignBottom(10 + self.Copyright:GetTall() + 5 + self.GitHubStar:GetTall() + 5)
 				self.Copyright:AlignRight(10)
-				self.Copyright:AlignBottom(10)
+				self.Copyright:AlignBottom(10 + self.GitHubStar:GetTall() + 5)
+				self.GitHubStar:AlignRight(10)
+				self.GitHubStar:AlignBottom(10)
 			end
 
 		SQLWorkbench.Menu.Tabs:CreateConnection("SQLite", 0)
