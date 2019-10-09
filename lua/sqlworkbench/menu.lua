@@ -262,12 +262,20 @@ else
 			return
 		end
 
-		SQLWorkbench.Menu = vgui.Create("DFrame")
+		local embed = hook.Run("SQLWorkbench.Embed")
+		if (IsValid(embed)) then
+			SQLWorkbench.Menu = vgui.Create("DFrame", embed)
+			SQLWorkbench.Menu:Dock(FILL)
+			SQLWorkbench.Menu:SetDraggable(false)
+			SQLWorkbench.Menu:ShowCloseButton(false)
+		else
+			SQLWorkbench.Menu = vgui.Create("DFrame")
+			SQLWorkbench.Menu:SetSize(math.min(1000, ScrW()), math.min(700, ScrH()))
+			SQLWorkbench.Menu:Center()
+			SQLWorkbench.Menu:MakePopup()
+		end
 		SQLWorkbench.Menu:SetTitle("SQLWorkbench")
 		SQLWorkbench.Menu:SetIcon("icon16/database.png")
-		SQLWorkbench.Menu:SetSize(math.min(1000, ScrW()), math.min(700, ScrH()))
-		SQLWorkbench.Menu:Center()
-		SQLWorkbench.Menu:MakePopup()
 
 		SQLWorkbench.Menu.btnMinim:SetDisabled(false)
 		function SQLWorkbench.Menu.btnMinim:DoClick()
