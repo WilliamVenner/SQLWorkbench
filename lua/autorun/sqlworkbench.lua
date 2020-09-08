@@ -65,10 +65,10 @@ if (SERVER) then
 	AddCSLuaFile("sqlworkbench/menu.lua")
 	AddCSLuaFile("sqlworkbench/networking.lua")
 
-	for _,f in ipairs((file.Find("sqlworkbench/ace/*.lua", "LUA"))) do
+	for _,f in ipairs((file.Find("sqlworkbench/ace/*", "LUA"))) do
 		AddCSLuaFile("sqlworkbench/ace/" .. f)
 	end
-	for _,f in ipairs((file.Find("sqlworkbench/ace/snippets/*.lua", "LUA"))) do
+	for _,f in ipairs((file.Find("sqlworkbench/ace/snippets/*", "LUA"))) do
 		AddCSLuaFile("sqlworkbench/ace/snippets/" .. f)
 	end
 
